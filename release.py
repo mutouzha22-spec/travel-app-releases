@@ -29,7 +29,7 @@ def release(version, description):
     # 第二步：编译 APK（版本号已写入代码）
     print("正在编译 APK，约需 3-4 分钟...")
     result = subprocess.run(
-        ["flutter", "build", "apk", "--release"],
+        [r"D:\flutter\bin\flutter.bat", "build", "apk", "--release"],
         cwd=APP_DIR
     )
     if result.returncode != 0:
